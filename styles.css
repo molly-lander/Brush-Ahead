@@ -1,0 +1,368 @@
+/*affects whole page */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*Fonts*/
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: #47634D;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------FIRST PAGE: LETS GET STARTED ---------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------Centering the content---------------------------------------------------*/
+
+.home__img--container img {
+    width: 100%;
+    height: 92vh; 
+    object-fit: cover; 
+    object-position: center; 
+    align-self: center;
+}
+
+.home__container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 95vh;
+}
+
+
+.home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-right: 20px;
+}
+
+/*----------------------------------Content colours, fonts and sizes---------------------------------------------------*/
+.home__content h1 {
+    text-align: center;
+    align-self: center;
+    font-size: 10rem;
+    margin-top: 10px;
+    color: #FFFEF5;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #85B0B8; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .copyright p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*----------------------------------Button setup---------------------------------------------------*/
+.button {
+    background-color: #EDC872;
+    border: 2px solid #FFFEF5;
+    outline: none; 
+    border-radius: 1000px;
+    color: #544E40;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    align-self: center;
+}
+
+.button:hover {
+    background-color: #E6B2B3;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+/* Main content should grow to fill space */
+#home {
+    flex: 1;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------Second PAGE: TIME OF DAY---------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Time of day buttons---------------------------------------------------*/
+
+.timebutton {
+    background-color: #EDC872;
+    border: 2px solid #FFFEF5;
+    outline: none; 
+    border-radius: 1000px;
+    color: #544E40;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    align-self: center; 
+    min-width: 36vw;
+}
+
+
+.timebutton:hover {
+    background-color: #E6B2B3;
+}
+
+a.timebutton {
+    text-decoration: none;
+}
+
+
+.backbutton {
+    background-color: #EDC872;
+    border: 2px solid #FFFEF5;
+    outline: none; 
+    border-radius: 1000px;
+    color: #544E40;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    align-self: right;
+}
+
+.backbutton:hover {
+    background-color: #E6B2B3;
+}
+
+a.backbutton {
+    text-decoration: none;
+}
+
+
+.timebackbutton__wrapper {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    z-index: 10; 
+}
+
+.timebackbutton {
+    background-color: #EDC872;
+    border: 2px solid #FFFEF5;
+    outline: none; 
+    border-radius: 500px;
+    color: #544E40;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    align-self: right;
+}
+
+.timebackbutton:hover {
+    background-color: #E6B2B3;
+}
+
+a.timebackbutton {
+    text-decoration: none;
+}
+
+/*-----------------------------------Time of day columns picture foramtting----------------------------------------------*/
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.time__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    width: 100vw;
+    height: 100vh;;
+  }
+  
+  .time__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+
+  .time__column img {
+    width: 38vw;
+    height: auto;
+  }
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------THIRD PAGE: SCENARIOS---------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+#scenarios {
+    width: 100%; 
+    min-height: 500px;
+}
+
+.scenarios__container {
+    height: 100vh;
+  }
+
+.scenarios__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px;
+}
+
+.scenarios__img--container {
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    height: 100%;
+}
+
+.scenarios__img--container img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; 
+    object-fit: contain;
+}
+
+.scenarios__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.scenarios__content h1 {
+    font-size: 4rem;
+    color: #FFFEF5;
+    align-self: center;
+    padding: 0px;
+}
+
+.scenariobutton {
+    background-color: #EDC872;
+    border: 2px solid #FFFEF5;
+    outline: none;
+    border-radius: 500px;
+    color: #544E40;
+    padding: 10px 100px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px; 
+    align-self: center;
+    min-width: 700px;
+}
+
+.scenariobutton:hover {
+    background-color: #E6B2B3;
+}
+
+.scenariobutton:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------FOURTH PAGE: VIDEOS---------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.activitiesbutton {
+    background-color: #EDC872;
+    border: 2px solid #FFFEF5;
+    outline: none;
+    border-radius: 500px;
+    color: #544E40;
+    padding: 10px 40px; 
+    text-align: center;
+    cursor: pointer;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px; 
+    width: 80%; 
+    max-width: 500px; 
+    position: absolute;
+    bottom: 0.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+}
+
+.activitiesbutton:hover {
+    background-color: #E6B2B3;
+}
+
+.activitiesbutton:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.activities__content h1 {
+    font-size: 4rem;
+    color: #FFFEF5;
+    align-self: center;
+    padding: 0px;
+}
+
+.activities {
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.video {
+    width: 90vw; 
+    height: 70vh;
+    display: block;
+}
